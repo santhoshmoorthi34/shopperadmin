@@ -12,7 +12,7 @@ const ListProducts = () => {
   // Fetch Products
   const fetchInfo = async () => {
     try {
-      const response = await fetch("http://localhost:510/allproducts");
+      const response = await fetch("https://shopperbackend-70xa.onrender.com/allproducts");
       const data = await response.json();
       setAllProducts(data);
     } catch (error) {
@@ -26,7 +26,7 @@ const ListProducts = () => {
 
   // Remove Product Function
 const remove_product = async (id)=>{
-  await fetch('http://localhost:510/removeproduct',{
+  await fetch('https://shopperbackend-70xa.onrender.com/removeproduct',{
     method:"POST",
     headers:{
       Accept:'application/json',

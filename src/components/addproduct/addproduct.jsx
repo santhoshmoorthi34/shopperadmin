@@ -33,7 +33,7 @@ const AddProduct = () => {
       let formData = new FormData();
       formData.append("product", image);
 
-      await fetch('http://localhost:510/upload', {
+      await fetch('https://shopperbackend-70xa.onrender.com/upload', {
         method: "POST",
         body: formData,
       })
@@ -50,7 +50,7 @@ const AddProduct = () => {
       }
     }
 
-    fetch('http://localhost:510/addproduct', {
+    fetch('https://shopperbackend-70xa.onrender.com/addproduct', {
       method: "POST",
       headers: {
         Accept: "application/json",
